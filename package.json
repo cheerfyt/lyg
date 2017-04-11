@@ -2,7 +2,7 @@
   "name": "lyg",
   "version": "0.0.1",
   "description": "Nodejs mini server",
-  "main": "./lib",
+  "main": "./lib/lyg",
   "repository": "git@github.com:Tate-fan/lyg.git",
   "author": "YT <tate_fan@163.com>",
   "license": "MIT",
