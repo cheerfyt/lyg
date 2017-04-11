@@ -2,13 +2,30 @@
   "name": "Lyg",
   "version": "0.0.1",
   "description": "python flask like server",
-  "main": "index.js",
+  "main": "./lib",
   "repository": "git@github.com:Tate-fan/lyg.git",
   "author": "YT <tate_fan@163.com>",
   "license": "MIT",
   "dependencies": {
     "array-flatten": "^2.1.1",
     "finalhandler": "^1.0.1",
-    "methods": "^1.1.2"
+    "methods": "^1.1.2",
+    "content-type": "^1.0.2",
+    "etag": "^1.8.0",
+    "methods": "^1.1.2",
+    "type-is": "^1.6.15",
+    "vary": "^1.1.1"
+  },
+  "files": [
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=4.0"
+  },
+  "devDependencies": {
+    "ava": "^0.19.0",
+    "chai": "^3.5.0",
+    "supertest": "^3.0.0"
   }
 }
