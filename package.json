@@ -1,0 +1,14 @@
+{
+  "name": "Lyg",
+  "version": "0.0.1",
+  "description": "python flask like server",
+  "main": "index.js",
+  "repository": "git@github.com:Tate-fan/lyg.git",
+  "author": "YT <tate_fan@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "array-flatten": "^2.1.1",
+    "finalhandler": "^1.0.1",
+    "methods": "^1.1.2"
+  }
+}
