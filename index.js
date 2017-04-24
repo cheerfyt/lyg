@@ -8,17 +8,6 @@ const slice = Array.prototype.slice;
 const toStr = Object.prototype.toString;
 const chalk = require('chalk');
 
-const colorMap = {
-  log:   'blue',
-  info:  'cyan',
-  error: 'red',
-  warn:  'yellow',
-  trace: 'magenta',
-  dir:   'green'
-};
-
-const methods = [ 'log', 'info', 'warn', 'error', 'dir', 'trace' ];
-
 /**!
  * get color function
  */
@@ -29,10 +18,20 @@ const isObject = (obj) => toStr.call(obj) === '[object Object]';
  * add meta information
  */
 const format = (method, msg) => {
-  let time = new Date().toISOString();
+  let time = new Date();
   return `[${time}]-[${method}]-msg: ${msg}`;
 };
 
+
+const methods = [ 'log', 'info', 'warn', 'error', 'dir', 'trace' ];
+const colorMap = {
+  log:   'blue',
+  info:  'cyan',
+  error: 'red',
+  warn:  'yellow',
+  trace: 'magenta',
+  dir:   'green'
+};
 
 methods.forEach((method) => {
   var char = method.charAt(0).toLowerCase();
