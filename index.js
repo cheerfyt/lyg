@@ -1,4 +1,9 @@
 'use strict';
+
+/**
+ * lyg
+ * CopyRight (c) 2017 YT <tate_fan@163.com>
+ */
 const slice = Array.prototype.slice;
 const toStr = Object.prototype.toString;
 const chalk = require('chalk');
