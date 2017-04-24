@@ -1,6 +1,6 @@
 {
   "name": "lyg",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "node console tool shortcut ",
   "main": "index.js",
   "keyword": [
