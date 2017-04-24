@@ -8,7 +8,7 @@
     "console",
     "helper",
     "log",
-    "logger"
+    "logger",
     "tool",
     "shortcut",
     "color"
