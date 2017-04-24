@@ -18,8 +18,9 @@ lyg.js
 ## usage
 
 ```javascirpt
+
 'use strict';
-const l = require('./index');
+const l = require('lyg');
 const util = require('util');
 const path = require('path');
 const err = new Error('i am error')
@@ -65,5 +66,5 @@ $ l.t = console.trace
 ## format
 
 ```bash
-$ [time]-[level]-[fileName]-[line]-[functionName]-msg: [message]
+$ [time]-[level]-[fileName]-[line]-[functionName]-msg: [Message]
 ```
