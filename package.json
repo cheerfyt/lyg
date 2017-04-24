@@ -1,12 +1,14 @@
 {
   "name": "lyg",
   "version": "0.0.4",
-  "description": "node console tool shortcut ",
+  "description": "console util",
   "main": "index.js",
   "keyword": [
     "node.js",
     "console",
     "helper",
+    "log",
+    "logger"
     "tool",
     "shortcut",
     "color"
