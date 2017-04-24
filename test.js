@@ -8,3 +8,4 @@ l.w('waring: %d', 10);
 l.e('err', err.message);
 l.t('trace');
 l.d({dir: 'YT'});
+l.d('Hello, %s', 'YT');

@@ -1,7 +1,6 @@
 'use strict';
 const slice = Array.prototype.slice;
 const toStr = Object.prototype.toString;
-
 const chalk = require('chalk');
 
 const colorMap = {
@@ -12,6 +11,8 @@ const colorMap = {
   trace: 'magenta',
   dir:   'green'
 };
+
+const methods = [ 'log', 'info', 'warn', 'error', 'dir', 'trace' ];
 
 /**!
  * get color function
@@ -28,17 +29,9 @@ const format = (method, msg) => {
 };
 
 
-[
-  'log',
-  'info',
-  'warn',
-  'error',
-  'dir',
-  'trace'
-].forEach((method) => {
+methods.forEach((method) => {
   var char = method.charAt(0).toLowerCase();
   exports[char] = function() {
-
     let args = slice.call(arguments);
     let cFn = colorFn(method, colorMap);
     if ('dir' === method) {
