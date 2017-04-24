@@ -1,2 +1,3 @@
-# lyg
+# lyg.js
+
 a mini server
