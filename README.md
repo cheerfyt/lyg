@@ -18,6 +18,6 @@ l.t('trace');
 l.d({dir: 'YT'});
 ```
 
-![screen](https://github.com/Tate-fan/lyg/blob/master/screenshot_01.png)
+![screen](https://github.com/Tate-fan/lyg/blob/master/screenshot_01.png?raw=true)
 
     l => log, i => info, w => warn, e => error, t => trace, d => dir
