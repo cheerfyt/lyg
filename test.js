@@ -1,8 +1,6 @@
 'use strict';
 
 const l = require('./index');
-const util = require('util');
-const path = require('path');
 const err = new Error('i am error')
 const obj = {
   name: 'YT',

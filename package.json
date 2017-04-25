@@ -1,9 +1,9 @@
 {
   "name": "lyg",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "nodejs console log util",
   "main": "index.js",
-  "keyword": [
+  "keywords": [
     "node.js",
     "console",
     "helper",

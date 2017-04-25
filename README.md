@@ -21,8 +21,6 @@ lyg.js
 
 'use strict';
 const l = require('lyg');
-const util = require('util');
-const path = require('path');
 const err = new Error('i am error')
 const obj = {
   name: 'YT',
@@ -66,5 +64,5 @@ $ l.t = console.trace
 ## format
 
 ```bash
-$ [time]-[level]-[fileName]-[line]-[functionName]-msg: [Message]
+$ [time]-[level]-[fileName]-[lineNumber]-[functionName]-msg: [Message]
 ```

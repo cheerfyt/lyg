@@ -12,15 +12,15 @@ const path = require('path');
  * get color function
  * @private
  */
-var colorFn = (method, color) => chalk[color[method]];
-var isObject = (obj) => toStr.call(obj) === '[object Object]';
+const colorFn = (method, color) => chalk[color[method]];
+const isObject = (obj) => toStr.call(obj) === '[object Object]';
 
 
 /**!
  * add meta information
  * @private
  */
-var format = (level, msg, opts) => {
+const format = (level, msg, opts) => {
   opts = opts || {};
   let {line, method, file} = opts;
   method = /anonymous/ig.test(method)? 'anonymous': method;
@@ -33,7 +33,7 @@ var format = (level, msg, opts) => {
  * @desc get call stack info
  * @private
  */
-var getStackInfo = function() {
+const getStackInfo = function() {
   // https://github.com/v8/v8/wiki/Stack%20Trace%20API
   let data = {};
   let reg1 = /at\s+(.*)\s+\((.*):(\d*):(\d*)\)/i;
@@ -57,7 +57,7 @@ var getStackInfo = function() {
  */
 const methods = ['log', 'info', 'warn', 'error', 'dir', 'trace'];
 methods.forEach((method) => {
-  var char = method.charAt(0).toLowerCase();
+  let char = method.charAt(0).toLowerCase();
   exports[char] = function() {
     let args = slice.call(arguments);
     let opts = getStackInfo();
