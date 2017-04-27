@@ -22,7 +22,9 @@ const isObject = (obj) => toStr.call(obj) === '[object Object]';
  */
 const format = (level, msg, opts) => {
   opts = opts || {};
-  let {line, method, file} = opts;
+  let line = opts.line;
+  let method = opts.method;
+  let file = opts.file;
   method = /anonymous/ig.test(method)? 'anonymous': method;
   let time = new Date().toLocaleString();
   return `[${time}]-[${level}]-[${file}]-[${line}]-[${method}]-msg: ${msg}`;
