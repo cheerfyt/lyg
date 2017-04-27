@@ -19,6 +19,7 @@ lyg.js
 ## usage
 
 ```javascirpt
+
 'use strict';
 const l = require('lyg');
 const err = new Error('i am error')
