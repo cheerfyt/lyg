@@ -11,6 +11,7 @@
 
 lyg.js
 ========
+[![Build Status](https://travis-ci.org/Tate-fan/lyg.svg?branch=master)](https://travis-ci.org/lyg/lyg)
 
 - lyg.js is a useful console logger tool;
 - show time, level, shortFileName, lineNumber, functionName, Message
@@ -18,7 +19,6 @@ lyg.js
 ## usage
 
 ```javascirpt
-
 'use strict';
 const l = require('lyg');
 const err = new Error('i am error')

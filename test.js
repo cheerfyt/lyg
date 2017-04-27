@@ -1,6 +1,8 @@
 'use strict';
 
 const l = require('./index');
+const test = require('ava').test;
+
 const err = new Error('i am error')
 const obj = {
   name: 'YT',
@@ -29,3 +31,12 @@ function getInfo() {
 getInfo();
 
 l.t('the trace info');
+
+test('## export function', t => {
+  t.pass(typeof l.i === 'function');
+  t.pass(typeof l.e === 'function');
+  t.pass(typeof l.w === 'function');
+  t.pass(typeof l.l === 'function');
+  t.pass(typeof l.t === 'function');
+  t.pass(typeof l.d === 'function');
+})
