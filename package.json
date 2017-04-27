@@ -23,7 +23,7 @@
     "chalk": "^1.1.3"
   },
   "engine": {
-    "node": ">=6.0"
+    "node": ">=4.0"
   },
   "devDependencies": {
     "ava": "^0.19.1"
