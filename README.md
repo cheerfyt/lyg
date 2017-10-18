@@ -11,6 +11,8 @@
 
 lyg.js
 ========
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/cheerfyt/lyg.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/Tate-fan/lyg.svg?branch=master)](https://travis-ci.org/lyg/lyg)
 
 - lyg.js is a useful console logger tool;
