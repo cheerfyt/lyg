@@ -20,12 +20,12 @@
   "author": "YT <tate_fan@163.com>",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^1.1.3"
+    "chalk": "^2.2.0"
   },
   "engine": {
     "node": ">=4.0"
   },
   "devDependencies": {
-    "ava": "^0.19.1"
+    "ava": "^0.22.0"
   }
 }
