@@ -40,3 +40,8 @@ test('## export function', t => {
   t.pass(typeof l.t === 'function');
   t.pass(typeof l.d === 'function');
 })
+
+
+
+
+
