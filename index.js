@@ -8,6 +8,7 @@ const toStr = Object.prototype.toString;
 const chalk = require('chalk');
 const path = require('path');
 
+
 /**!
  * get color function
  * @private
@@ -25,7 +26,7 @@ const format = (level, msg, opts) => {
   let line = opts.line;
   let method = opts.method;
   let file = opts.file;
-  method = /anonymous/ig.test(method)? 'anonymous': method;
+  method = /anonymous/ig.test(method) ? 'anonymous' : method;
   let time = new Date().toLocaleString();
   return `[${time}]-[${level}]-[${file}]-[${line}]-[${method}]-msg: ${msg}`;
 };
@@ -35,7 +36,7 @@ const format = (level, msg, opts) => {
  * @desc get call stack info
  * @private
  */
-const getStackInfo = function() {
+const getStackInfo = function () {
   // https://github.com/v8/v8/wiki/Stack%20Trace%20API
   let data = {};
   let reg1 = /at\s+(.*)\s+\((.*):(\d*):(\d*)\)/i;
@@ -60,7 +61,7 @@ const getStackInfo = function() {
 const methods = ['log', 'info', 'warn', 'error', 'dir', 'trace'];
 methods.forEach((method) => {
   let char = method.charAt(0).toLowerCase();
-  exports[char] = function() {
+  exports[char] = function () {
     let args = slice.call(arguments);
     let opts = getStackInfo();
     let cFn = colorFn(method, colorMap);
@@ -80,10 +81,10 @@ methods.forEach((method) => {
  * @desc default color setting
  */
 const colorMap = {
-  log:   'blue',
-  info:  'cyan',
+  log: 'blue',
+  info: 'cyan',
   error: 'red',
-  warn:  'yellow',
+  warn: 'yellow',
   trace: 'magenta',
-  dir:   'green'
+  dir: 'green'
 };
