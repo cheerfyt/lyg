@@ -10,7 +10,6 @@ const obj = {
   num: 10,
   date: new Date()
 };
-
 l.l('coming anonymous');
 l.i('multi value - %s:%d ', 'info', 100);
 l.w('waring: %d', 10);
