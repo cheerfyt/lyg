@@ -6,6 +6,7 @@
   - [usage](#usage)
   - [API](#api)
   - [format](#format)
+  - [ADD LD-3](#add-ld-3)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -67,3 +68,6 @@ $ l.t = console.trace
 ```bash
 $ [time]-[level]-[fileName]-[lineNumber]-[functionName]-msg: [Message]
 ```
+
+
+## ADD LD-3
